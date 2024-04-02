@@ -1,8 +1,6 @@
 package DSA_Sheet.Arrays;
 
-import java.util.Scanner;
-
-public class _1ReverseArray {
+public class _1ReverseArrayInteger {
     public static void main(String[] args) {
         int[] arr ={3,2,31,1,31,4,1};
         int start=0;int end=arr.length-1;
