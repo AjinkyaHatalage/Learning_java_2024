@@ -14,5 +14,6 @@ public class LearnBasicString {
         // but string create its new instance if it assigned
         s=s.concat("Hatalage");
         System.out.println("Here s is newly instantiated : "+ s );
+        System.out.println("_________________________________");
     }
 }
