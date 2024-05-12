@@ -1,0 +1,36 @@
+ Why we need framework:
+
+  3 Tier architecture:
+  Frontend -> HTML , CSS, Javascript , Java EE(jsp,servelt)
+  backend -> java classes , nussiness logic
+  Database -> Mssql , oracle and other
+
+  So we need  framework to provide this structure
+  Framework -> Spring
+
+  Flow :
+
+   HTML/JS      -->   Endpoint   ->   Bussiness layer                --> DATA layer (DAO layer)  -> Database
+  (Browser)           (Backend)      (Core Busniess logic written)
+
+                     --- Spring support above this ---------------------------------------------------------
+
+   Official documentation Link to use :      https://docs.spring.io/spring-framework/reference/index.html
+
+   Spring MVC: (Model view Controller)
+   controller -> receive request  ,
+   controller will invoke corresponding model and controller have knowledge what response page send back tu user
+
+
+Spring MVC :
+
+
+
+
+                                      |--- 2) Handler mapping logic (which particular controller is processed for request)
+                                      |---      3) Controller (Controller is found then invoke java class where bussinesslogic is written)
+request  ->1) Dispatcher servelt   ---->                                                                 |
+           (spring hits this)         |     <-4)(Going to return model and view view in serse webpage )--|
+                                      |--> 5) View resolver (right page mapping)
+                                      |--> 6) View
+
